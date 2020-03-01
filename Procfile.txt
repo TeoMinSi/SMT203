@@ -1,1 +1,1 @@
-web: gunicorn <filename no py>:app
+web: gunicorn fulanotbot/Proposal_demo:app
