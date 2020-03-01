@@ -1,1 +1,0 @@
-web: gunicorn fulanotbot/Proposal_demo:app
