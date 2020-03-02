@@ -1,0 +1,10 @@
+sudo -u postgres createuser --superuser name_of_user
+
+sudo -u name_of_user createdb name_of_database
+
+psql -U name_of_user -d name_of_database
+
+CREATE TABLE maindb (num varchar, mac_address varchar, location_id varchar, semantic_place varchar, location_recode varchar, location_id_recode varchar, time varchar, date varchar, day varchar);
+
+COPY maindb FROM '/home/seanjin/Documents/lsjpgtester/sample_wifidb.csv' WITH (FORMAT csv);
+
