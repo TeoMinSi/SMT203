@@ -16,9 +16,13 @@ import requests
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-PORT = os.environ.get('PORT')
-TOKEN = "1009109451:AAGDSNMbSGloAUoCW9EYTlEUf1vMMuhrnZc"
-NAME = "flasktele"
+#PORT = os.environ.get('PORT')
+PORT = 5432
+#sean token
+#TOKEN = "1009109451:AAGDSNMbSGloAUoCW9EYTlEUf1vMMuhrnZc"
+#minsi token
+TOKEN = "815123050:AAGYmp4G3WQRs2DkGBlyCfedF7yIJXKGH9A"
+NAME = "msflasktele"
 updater = Updater(TOKEN, use_context=True)
 dp = updater.dispatcher
 base_url = 'https://{}.herokuapp.com/'.format(NAME)
